@@ -3,6 +3,7 @@
     <h2>{{title}}</h2>
     <div class="left">
       <router-link to="/route/first/one">one</router-link>
+      <router-link to="/foo">foo</router-link>
       <!--  <span @click="gotoOne()">one</span> -->
       <router-link to="/route/first/two">two</router-link>
       <router-link to="/route/first/three">three</router-link>
