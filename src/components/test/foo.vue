@@ -17,7 +17,8 @@ export default {
       //   config.headers.common['token_li'] = 'haha'
       //   console.log(config)
       // })
-
+      console.log(this)
+      console.log(this.$axios)
       this.$axios({
         url: 'http://api.console.doc/server/index.php?g=Web&c=Mock&o=simple&projectID=6&uri=www.eoapi.cn/api/demo',
         method: 'post'
