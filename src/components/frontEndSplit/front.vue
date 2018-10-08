@@ -52,6 +52,7 @@ export default{
         // this.data = '234324'
         console.log(res)
         console.log('23')
+        console.log(this)
         console.log(this.data)
         this.data = res.data[2]
       })

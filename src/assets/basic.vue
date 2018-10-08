@@ -10,7 +10,9 @@ export default {
   },
   computed: {
   },
-  components: {}
+  components: {},
+  methods: {},
+  mounted () {}
 }
 </script>
 
