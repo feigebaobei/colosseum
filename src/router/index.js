@@ -26,6 +26,7 @@ import routeFour from '../components/route/routeFour.vue'
 import routeUser from '../components/route/routeUser.vue'
 import routeSecond from '../components/route/routeSecond.vue'
 import routeThree from '../components/route/routeThree.vue'
+import downSelect from '../components/commen/downSelect.vue'
 
 Vue.use(Router)
 
@@ -223,14 +224,18 @@ const vueRouter = new Router({
           props: true
         }
       ]
+    },
+    {
+      path: '/downSelect', component: downSelect
     }
-  ],
-  scrollBehavior (to, from, savedPosition) {
-    console.log(to)
-    console.log(from)
-    console.log(savedPosition)
-    return { x: 205, y: 300 }
-  }
+  ]
+  // ,
+  // scrollBehavior (to, from, savedPosition) {
+  //   console.log(to)
+  //   console.log(from)
+  //   console.log(savedPosition)
+  //   return { x: 205, y: 300 }
+  // }
 })
 // vueRouter.beforeEach(function (to, from, next) {
 //   if (to.path === '/route/five') {

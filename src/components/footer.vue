@@ -8,6 +8,15 @@
 export default {
   data: function () {
     return {}
+  },
+  methods: {
+    handleScroll () {
+      console.log('23')
+      console.log(window.scrollY)
+    }
+  },
+  mounted () {
+    // window.addEventListener('scroll', this.handleScroll)
   }
 }
 </script>
