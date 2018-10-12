@@ -54,7 +54,7 @@ export default {
   //   bar: 'demo'
   // },
   provide: () => {
-    return { bar: 'haha'}
+    return {bar: 'haha'}
   },
   components: {
     mixinsParent: mixins,
