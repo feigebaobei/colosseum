@@ -1,6 +1,11 @@
 <template>
   <div class="downSelect">
     <p>{{msg}}</p>
+    <form action="#">
+      <input type="search">
+      <button type="submit">submit</button>
+      <button type="reset">reset</button>
+    </form>
     <ds :data="list"></ds>
   </div>
 </template>

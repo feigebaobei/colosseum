@@ -32,6 +32,9 @@
         <input type="search" @click="onBlur" ref="search">
       </form>
     <hr>
+      <p>默认props</p>
+      <prop></prop>
+    <hr>
   </div>
 </template>
 
@@ -41,6 +44,7 @@ import trRow from './trRow.vue'
 import refDataTransfer from './refDataTransfer.vue'
 import bus1 from './bus1.vue'
 import bus2 from './bus2.vue'
+import prop from './prots.vue'
 export default {
   data: function () {
     return {
@@ -61,7 +65,8 @@ export default {
     trRow,
     refDataTransfer,
     bus1,
-    bus2
+    bus2,
+    prop
   },
   // computed: {
   //   testparent: function () {
