@@ -33,7 +33,13 @@
       </form>
     <hr>
       <p>默认props</p>
-      <prop></prop>
+      <prop :first="first" :second="second" :three="three"></prop>
+    <hr>
+      <p>computed</p>
+      <computed></computed>
+    <hr>
+      <p>动态组件</p>
+      <component :is="curComp"></component>
     <hr>
   </div>
 </template>
@@ -44,14 +50,22 @@ import trRow from './trRow.vue'
 import refDataTransfer from './refDataTransfer.vue'
 import bus1 from './bus1.vue'
 import bus2 from './bus2.vue'
-import prop from './prots.vue'
+import prop from './props.vue'
+import computed from './computed.vue'
+import foo from '@/components/commen/foo.vue'
+import bar from '@/components/commen/bar.vue'
 export default {
   data: function () {
     return {
       firstName: 'Walter',
       lastName: 'White',
       alias: 'Heisenberg',
-      colorData: 'red'
+      colorData: 'red',
+      // 测试porps属性
+      first: 'string',
+      second: [1, 2, 3],
+      three: {k: 'v'},
+      curComp: 'foo'
     }
   },
   // provide: {
@@ -66,7 +80,10 @@ export default {
     refDataTransfer,
     bus1,
     bus2,
-    prop
+    prop,
+    computed,
+    foo,
+    bar
   },
   // computed: {
   //   testparent: function () {
