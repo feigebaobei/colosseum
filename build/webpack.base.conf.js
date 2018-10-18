@@ -19,7 +19,10 @@ const createLintingRule = () => ({
   }
 })
 
-module.exports = {
+// module.exports = 
+// 这里为了使用vux把原来配置赋值给webpackConfig.添加了vuxLoader，又合并到一起。
+const vuxLoader = require('vux-loader')
+const webpackConfig = {
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
@@ -90,3 +93,6 @@ module.exports = {
     child_process: 'empty'
   }
 }
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: ['vux-ui']
+})

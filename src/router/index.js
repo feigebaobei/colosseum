@@ -26,7 +26,8 @@ import routeFour from '../components/route/routeFour.vue'
 import routeUser from '../components/route/routeUser.vue'
 import routeSecond from '../components/route/routeSecond.vue'
 import routeThree from '../components/route/routeThree.vue'
-import downSelect from '../components/commen/downSelect.vue'
+import downSelect from '../components/common/downSelect.vue'
+import vux from '../components/vux/vux.vue'
 
 Vue.use(Router)
 
@@ -227,6 +228,9 @@ const vueRouter = new Router({
     },
     {
       path: '/downSelect', component: downSelect
+    },
+    {
+      path: '/vux', component: vux
     }
   ]
   // ,

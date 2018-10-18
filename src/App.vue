@@ -17,6 +17,7 @@
       <router-link to="/elementui">elementui</router-link>
       <router-link to="/route">route</router-link>
       <router-link to="/downSelect">downSelect</router-link>
+      <router-link to="/vux">vux</router-link>
     </nav>
     <div class="content">
         <router-view/>

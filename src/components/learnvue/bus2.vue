@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Bus from '../commen/bus.js'
+import Bus from '../common/bus.js'
 export default {
   props: [''],
   data () {

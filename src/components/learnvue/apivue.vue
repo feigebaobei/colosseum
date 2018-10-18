@@ -41,6 +41,9 @@
       <p>动态组件</p>
       <component :is="curComp"></component>
     <hr>
+      <p>watch</p>
+      <watch></watch>
+    <hr>
   </div>
 </template>
 
@@ -52,8 +55,9 @@ import bus1 from './bus1.vue'
 import bus2 from './bus2.vue'
 import prop from './props.vue'
 import computed from './computed.vue'
-import foo from '@/components/commen/foo.vue'
-import bar from '@/components/commen/bar.vue'
+import foo from '@/components/common/foo.vue'
+// import bar from '@/components/common/bar.vue'
+import watch from './watch.vue'
 export default {
   data: function () {
     return {
@@ -74,6 +78,12 @@ export default {
   provide: () => {
     return {bar: 'haha'}
   },
+  watch: {
+    first: function (newValue, oldValue) {
+      console.log(newValue)
+      console.log(oldValue)
+    }
+  },
   components: {
     mixinsParent: mixins,
     trRow,
@@ -83,7 +93,8 @@ export default {
     prop,
     computed,
     foo,
-    bar
+    // bar,
+    watch
   },
   // computed: {
   //   testparent: function () {
