@@ -10,9 +10,11 @@ export default {
   },
   computed: {
   },
-  components: {}
+  components: {},
+  methods: {},
+  mounted () {}
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 </style>

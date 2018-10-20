@@ -26,6 +26,7 @@ import routeFour from '../components/route/routeFour.vue'
 import routeUser from '../components/route/routeUser.vue'
 import routeSecond from '../components/route/routeSecond.vue'
 import routeThree from '../components/route/routeThree.vue'
+import tabSelect from '../components/tabSelect/tabSelect.vue'
 
 Vue.use(Router)
 
@@ -223,6 +224,10 @@ const vueRouter = new Router({
           props: true
         }
       ]
+    },
+    {
+      path: '/tabSelect',
+      component: tabSelect
     }
   ],
   scrollBehavior (to, from, savedPosition) {

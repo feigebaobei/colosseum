@@ -16,6 +16,7 @@
       <router-link to="/frontEndSplit">frontEndSplit</router-link>
       <router-link to="/elementui">elementui</router-link>
       <router-link to="/route">route</router-link>
+      <router-link to="/tabSelect">tabSelect</router-link>
     </nav>
     <div class="content">
         <router-view/>
