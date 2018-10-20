@@ -27,6 +27,8 @@ import routeUser from '../components/route/routeUser.vue'
 import routeSecond from '../components/route/routeSecond.vue'
 import routeThree from '../components/route/routeThree.vue'
 import tabSelect from '../components/tabSelect/tabSelect.vue'
+import downSelect from '../components/common/downSelect.vue'
+import vux from '../components/vux/vux.vue'
 
 Vue.use(Router)
 
@@ -227,15 +229,22 @@ const vueRouter = new Router({
     },
     {
       path: '/tabSelect',
-      component: tabSelect
+      component: tabSelect,
+    },
+    {
+      path: '/downSelect', component: downSelect
+    },
+    {
+      path: '/vux', component: vux
     }
-  ],
-  scrollBehavior (to, from, savedPosition) {
-    console.log(to)
-    console.log(from)
-    console.log(savedPosition)
-    return { x: 205, y: 300 }
-  }
+  ]
+  // ,
+  // scrollBehavior (to, from, savedPosition) {
+  //   console.log(to)
+  //   console.log(from)
+  //   console.log(savedPosition)
+  //   return { x: 205, y: 300 }
+  // }
 })
 // vueRouter.beforeEach(function (to, from, next) {
 //   if (to.path === '/route/five') {
