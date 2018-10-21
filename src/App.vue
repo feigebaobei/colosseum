@@ -19,6 +19,7 @@
       <router-link to="/tabSelect">tabSelect</router-link>
       <router-link to="/downSelect">downSelect</router-link>
       <router-link to="/vux">vux</router-link>
+      <router-link to="/iview">iview</router-link>
     </nav>
     <div class="content">
         <router-view/>
