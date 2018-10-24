@@ -1,20 +1,26 @@
 <template>
-  <div class="basic"></div>
+  <div class="basic">
+    basic
+  </div>
 </template>
 
 <script>
 export default {
   props: [''],
   data () {
-    return {}
+    return {
+    }
   },
   computed: {
   },
-  components: {},
+  components: {
+  },
   methods: {},
+  created () {},
   mounted () {}
 }
 </script>
 
 <style lang="scss" scoped>
+.basic {}
 </style>
