@@ -26,7 +26,8 @@ import routeFour from '../components/route/routeFour.vue'
 import routeUser from '../components/route/routeUser.vue'
 import routeSecond from '../components/route/routeSecond.vue'
 import routeThree from '../components/route/routeThree.vue'
-import tabSelect from '../components/tabSelect/tabSelect.vue'
+// import tabSelect from '../components/tabSelect/tabSelect.vue'
+import tabSelect from '../components/common/tabSelect/tabSelect.vue'
 import downSelect from '../components/common/downSelect.vue'
 import vux from '../components/vux/vux.vue'
 import iview from '../components/test/iview.vue'
@@ -34,6 +35,7 @@ import iview from '../components/test/iview.vue'
 Vue.use(Router)
 
 const vueRouter = new Router({
+  mode: 'history',
   routes: [
     // {
     //   path: '/',

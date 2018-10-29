@@ -13,6 +13,61 @@
       </div>
       <button v-for="(name, index) in animateName" :key="index">{{name}}</button>
     </div>
+    <hr>
+    <div class="firstDemo">
+      <button @click="fdShow = !fdShow">toggle</button>
+      <transition name="fade" :duration="6000" appear>
+        <p v-if="fdShow" key="sdf">hello</p>
+        <p v-else>hide</p>
+      </transition>
+    </div>
+    <div>
+      <p>v-enter 进入开始状态(2.1.8移除)</p>
+      <p>v-enter-active 进入过渡生效时的状态。可以定义过渡属性，如：时间、延迟、曲线。</p>
+      <p>v-enter-to 进行过渡的结束状态。</p>
+      <p>v-leave 离开开始状态(2.1.8移除)</p>
+      <p>v-leave-active 离开过渡生效时的状态。</p>
+      <p>v-leave-to 离开结束状态</p>
+    </div>
+    <div>
+      <p>自定义过渡类名</p>
+      <p>enter-class</p>
+      <p>enter-active-class</p>
+      <p>enter-to-class(2.1.8+)</p>
+      <p>leave-class</p>
+      <p>leave-active-class</p>
+      <p>leave-to-class(2.1.8+)</p>
+    </div>
+    <div>
+      <p>css动画</p>
+      <p></p>
+    </div>
+    <div>
+      <p>before-enter</p>
+      <p>enter(必须使用done进行回调)</p>
+      <p>after-enter</p>
+      <p>enter-cancelled</p>
+      <p>before-leave</p>
+      <p>leave(必须使用done进行回调)</p>
+      <p>after-leave</p>
+      <p>leave-cancelled</p>
+    </div>
+    <div>
+      <p>可以使用animation/velocity.js</p>
+    </div>
+    <div>
+      <p>设置appear</p>
+      <p>appear-class</p>
+      <p>appear-active-class</p>
+      <p>appear-to-class</p>
+      <p>@befor-appear</p>
+      <p>@appear</p>
+      <p>@after-appear</p>
+      <p>@appear-cancelled</p>
+    </div>
+    <hr>
+    <div ref="first" class="basisSize ts" @click="switchSize">first</div>
+    <div ref="first" class="basisSize ts" @click="switchSize">second</div>
   </div>
 </template>
 
@@ -30,7 +85,9 @@ export default {
       animatedClass: 'animated',
       currentAnimate: '',
       // isInfinite: 'infinite',
-      checked: true
+      checked: true,
+      // demo
+      fdShow: true
     }
   },
   computed: {
@@ -62,6 +119,12 @@ export default {
     },
     changeInfinite: function () {
       console.log(this.isInfinite)
+    },
+    switchSize (event) {
+      //
+      console.log(this.$refs.first)
+      this.$refs.first.classList.add('basisBig')
+      // .classList.add(' buttonBig')
     }
   }
 }
@@ -101,4 +164,34 @@ export default {
   // .animatebox > button {
   //   margin: 2px 5px;
   // }
+  // demo
+  // .fade-enter-active,
+  // .fade-leave-active {
+    // transition: opacity 1.5s;
+  // }
+  // .fade-enter,
+  // .fade-leave-to {
+    // opacity: 0;
+  // }
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    transition: opacity 1.5s;
+  }
+  .fade-leave-active {
+    transition: opacity 3s;
+  }
+  .fade-leave-to {
+    opacity: 0;
+  }
+  .basisSize {
+    font-size: 18px;
+  }
+  .ts {
+    transition: all 1s;
+  }
+  .basisBig {
+    font-size: 22px;
+  }
 </style>

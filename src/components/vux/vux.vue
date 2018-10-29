@@ -11,16 +11,22 @@
         haha
       </div>
     </popup>
+    <group>
+      <datetime v-model="dateValue" :placeholder="'Please'">
+      </datetime>
+      <datetime v-model="dateValue" :placeholder="'Please select'" :min-year=2000 :max-year=2016 format="YYYY-MM-DD HH:mm" :title="'Years after 2000'"></datetime>
+    </group>
   </div>
 </template>
 
 <script>
-import {Icon, Group, Cell, Popup, XSwitch} from 'vux'
+import {Icon, Group, Cell, Popup, XSwitch, Datetime} from 'vux'
 export default {
   props: [''],
   data () {
     return {
-      show: false
+      show: false,
+      dateValue: ''
     }
   },
   computed: {
@@ -30,7 +36,8 @@ export default {
     group: Group,
     Cell,
     Popup,
-    XSwitch
+    XSwitch,
+    Datetime
   },
   methods: {},
   mounted () {}
