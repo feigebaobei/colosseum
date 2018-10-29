@@ -31,6 +31,7 @@ import tabSelect from '../components/common/tabSelect/tabSelect.vue'
 import downSelect from '../components/common/downSelect.vue'
 import vux from '../components/vux/vux.vue'
 import iview from '../components/test/iview.vue'
+import css from '../components/test/css.vue'
 
 Vue.use(Router)
 
@@ -242,6 +243,9 @@ const vueRouter = new Router({
     },
     {
       path: '/iview', component: iview
+    },
+    {
+      path: '/testcss', component: css
     }
   ]
   // ,

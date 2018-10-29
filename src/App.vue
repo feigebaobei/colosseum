@@ -20,6 +20,7 @@
       <router-link to="/downSelect">downSelect</router-link>
       <router-link to="/vux">vux</router-link>
       <router-link to="/iview">iview</router-link>
+      <router-link to="/testcss">testcss</router-link>
     </nav>
     <div class="content">
         <router-view/>
