@@ -2,8 +2,7 @@
   <div>
     <p>bar</p>
     <button @click="cevent">cevent</button>
-    <p>{{a}}</p>
-    <p>{{b}}</p>
+    <p>{{obj.a}}</p>
   </div>
 </template>
 
@@ -29,7 +28,13 @@ export default {
   components: {},
   methods: {
     cevent: function () {
-      this.obj.a = 'aa'
+      for (let i = 0; i < 133; i++) {
+        // this.obj.a = i
+        this.$nextTick(() => {
+          console.log(i)
+          this.obj.a = i
+        })
+      }
     }
   }
 }

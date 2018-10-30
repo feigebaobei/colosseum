@@ -11,7 +11,7 @@ export default {
   props: [''],
   data () {
     return {
-      show: false,
+      show: true,
       obj: {}
     }
   },
@@ -25,14 +25,19 @@ export default {
       this.$set(this.obj, 'msg', 'string')
     }
   },
-  created () {},
-  mounted () {}
+  created () {
+    // console.log(this.$el)
+  },
+  mounted () {
+    console.log(this.$el.first)
+    console.log(this.$el)
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .test {
-  position: fixed;
+  // position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
