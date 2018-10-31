@@ -10,11 +10,20 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/testback': {
+            target: 'https://buztest190.oasisapp.cn/honghclient/', // 接口的域名
+            changeOrigin: true, // 是否跨域
+            pathRewrite: {
+                '^/testback': ''
+            }
+        }
+    },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    // host: 'localhost', // can be overwritten by process.env.HOST
     // host: '172.20.0.204', // can be overwritten by process.env.HOST
+    host: 'local.oasisapp.cn', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
