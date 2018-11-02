@@ -22,6 +22,7 @@
       <router-link to="/iview">iview</router-link>
       <router-link to="/testcss">testcss</router-link>
       <router-link to="/store">store</router-link>
+      <router-link to="/velocity">velocity</router-link>
     </nav>
     <div class="content">
         <router-view/>
