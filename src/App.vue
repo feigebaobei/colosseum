@@ -8,6 +8,7 @@
       <router-link to="/vuedraggable">vuedraggable</router-link>
       <router-link to="/learnform">learnform</router-link>
       <router-link to="/apivue">api vue</router-link>
+      <router-link to="/vuex">vuex</router-link>
       <router-link to="/learnttransition">learnttransition</router-link>
       <router-link to="/learncomponent">learncomponent</router-link>
       <router-link to="/learnclass">learnclass</router-link>

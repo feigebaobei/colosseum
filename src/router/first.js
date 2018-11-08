@@ -7,6 +7,7 @@ import Bar from '../components/test/bar.vue'
 import vuedraggable0 from '../components/vuedraggable0.vue'
 import learnform from '../components/learnvue/learnformvue.vue'
 import apivue from '../components/learnvue/apivue.vue'
+import vuex from '../components/learnvue/vuex.vue'
 import learntransition from '../components/learnanimate/transition.vue'
 import learncomponent from '../components/learnvue/learncomponent.vue'
 import learnclass from '../components/learnvue/learnclass.vue'
@@ -58,6 +59,9 @@ const first = [
   },
   {
     path: '/apivue', component: apivue
+  },
+  {
+    path: '/vuex', component: vuex
   },
   {
     path: '/learnttransition', component: learntransition
