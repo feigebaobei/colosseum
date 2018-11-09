@@ -9,6 +9,7 @@
     <p>2倍年龄: {{calcAge}}</p>
     <button @click="addAge">add age</button>
     <button @click="addAge2">add 2 age</button>
+    <button @click="getAllData">getAllData</button>
   </div>
 </template>
 
@@ -73,12 +74,23 @@ export default {
   computed: {
     // ...mapGetters(['color']),
     ...mapGetters({
-      count: 'getAge',
-      cl: 'getColor',
-      calcAge: 'getAgeDouble'
+      // count: 'getAge', // 不使用命名空间的访问方式
+      // cl: 'getColor',
+      // calcAge: 'getAgeDouble'
+      // 使用login里的状态
+      // count: 'login/getAge',
+      // cl: 'login/getColor', // 使用命名空间的访问方式
+      // calcAge: 'login/getAgeDouble'
+      // 使用car里的状态
+      count: 'car/getAge',
+      cl: 'car/getColor',
+      calcAge: 'car/getAgeDouble'
     }),
     color () {
-      return this.cl
+      // return this.cl
+      console.log(this)
+      // return this.$store.state.login.color
+      return this.$store.getters['login/color']
     }
   },
   components: {
@@ -91,6 +103,9 @@ export default {
       // this.$store.commit('key')
       // this.$store.commit('item')
       this.$store.commit('ft')
+    },
+    getAllData () {
+      this.$store.dispatch('allData')
     }
   },
   created () {},

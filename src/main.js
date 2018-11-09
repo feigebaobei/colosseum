@@ -1,7 +1,9 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import statusManitor from './vuex/statusManitor.js'
+// import statusManitor from './vuex/statusManitor.js'
+// import modules from './vuex/modules.js'
+import modules from './vuex/module/modules.js'
 import App from './App'
 import router from './router'
 import axios from 'axios'
@@ -38,7 +40,8 @@ axios.defaults.headers.common['fromli'] = 'haha'
 new Vue({
   el: '#app',
   router,
-  store: statusManitor,
+  // store: statusManitor,
+  store: modules,
   components: { App },
   template: '<App/>'
 })
