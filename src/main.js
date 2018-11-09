@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 // import statusManitor from './vuex/statusManitor.js'
-// import modules from './vuex/modules.js'
+// import modules from './vuex/statusManitor.js'
 import modules from './vuex/module/modules.js'
 import App from './App'
 import router from './router'

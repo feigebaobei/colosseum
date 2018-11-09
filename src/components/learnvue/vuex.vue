@@ -105,7 +105,8 @@ export default {
       this.$store.commit('ft')
     },
     getAllData () {
-      this.$store.dispatch('allData')
+      console.log(this.$store)
+      this.$store.dispatch('car/allData')
     }
   },
   created () {},

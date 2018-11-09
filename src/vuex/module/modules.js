@@ -36,7 +36,7 @@ const car = {
   }
 }
 
-console.log(car)
+console.log('car', car)
 
 // const login = {
 //   namespaced: true,
