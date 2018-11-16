@@ -7,11 +7,16 @@
       <button type="reset">reset</button>
     </form>
     <ds :data="list"></ds>
+    <hr>
+    <p>secondli</p>
+    <first></first>
+    <second></second>
   </div>
 </template>
 
 <script>
 import ds from 'downselect' // 使用npm上的组件
+import {first, second} from 'secondli'
 // import ds from '@/components/npmvue/downselect/downSelect.vue' // 使用本地开发的代码
 export default {
   // props: [''],
@@ -37,10 +42,13 @@ export default {
   computed: {
   },
   components: {
-    ds
+    ds,
+    first,
+    second
   },
   methods: {},
-  mounted () {}
+  mounted () {
+  }
 }
 </script>
 

@@ -31,7 +31,7 @@ const car = {
       state,
       getters,
       mutations,
-      actions      
+      actions
     }
   }
 }
