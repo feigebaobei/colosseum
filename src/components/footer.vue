@@ -2,6 +2,11 @@
   <footer class="footer">
     <p>second</p>
     <p>first</p>
+<<<<<<< Updated upstream
+    <p>three three</p>
+=======
+    <p>three</p>
+>>>>>>> Stashed changes
     <h2>footer footer footer footer footer footer footer footer </h2>
   </footer>
 </template>
