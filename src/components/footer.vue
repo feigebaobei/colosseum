@@ -1,5 +1,7 @@
 <template>
   <footer class="footer">
+    <p>second</p>
+    <p>first</p>
     <h2>footer footer footer footer footer footer footer footer </h2>
   </footer>
 </template>
