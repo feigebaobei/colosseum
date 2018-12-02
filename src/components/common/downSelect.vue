@@ -9,14 +9,14 @@
     <ds :data="list"></ds>
     <hr>
     <p>secondli</p>
-    <first></first>
-    <second></second>
+    <!-- <first></first>
+    <second></second> -->
   </div>
 </template>
 
 <script>
 import ds from 'downselect' // 使用npm上的组件
-import {first, second} from 'secondli'
+// import {first, second} from 'secondli'
 // import ds from '@/components/npmvue/downselect/downSelect.vue' // 使用本地开发的代码
 export default {
   // props: [''],
@@ -43,8 +43,8 @@ export default {
   },
   components: {
     ds,
-    first,
-    second
+    // first,
+    // second
   },
   methods: {},
   mounted () {
