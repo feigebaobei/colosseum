@@ -1,5 +1,5 @@
 import {type, a, b, arr} from './mutation-types.js'
-console.log(arr[0])
+// console.log(arr[0])
 const mutations = {
   addAge: (state, payload) => {
     state.age += payload.num

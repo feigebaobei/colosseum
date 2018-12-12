@@ -22,6 +22,8 @@ import {
 } from 'element-ui' // 部分引用
 import 'element-ui/lib/theme-chalk/index.css'
 
+// import vConsole from '@/components/plugin/asset.js'
+
 Vue.use(VueDraggable)
 Vue.use(Button)
 Vue.use(Row)
