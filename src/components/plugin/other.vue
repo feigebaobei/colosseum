@@ -5,10 +5,10 @@
 </template>
 
 <script>
-// import vConsole from './asset.js'
-// import VConsole from 'vConsole'
-var VConsole = require('vConsole')
-var vConsole = new VConsole()
+// 为了不报警告就把它注释了。若需要使用vconsole请放开注释。
+// var VConsole = require('vConsole')
+// var vConsole = new VConsole()
+// 为了不报警告就把它注释了。若需要使用vconsole请放开注释。
 export default {
   props: [''],
   data () {

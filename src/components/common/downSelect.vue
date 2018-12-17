@@ -42,7 +42,7 @@ export default {
   computed: {
   },
   components: {
-    ds,
+    ds
     // first,
     // second
   },

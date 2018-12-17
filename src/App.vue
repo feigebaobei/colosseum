@@ -24,7 +24,8 @@
       <router-link to="/testcss">testcss</router-link>
       <router-link to="/store">store</router-link>
       <router-link to="/velocity">velocity</router-link>
-      <router-link to="plugin">plugin</router-link>
+      <router-link to="/plugin">plugin</router-link>
+      <router-link to="/common">common</router-link>
     </nav>
     <div class="content">
         <router-view/>
