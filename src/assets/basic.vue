@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  props: [''],
+  props: {},
   data () {
     return {
     }
@@ -21,6 +21,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.basic {}
+<style lang="sass" scoped>
+.basic
 </style>
