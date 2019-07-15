@@ -30,7 +30,7 @@ export default {
   methods: {},
   created () {},
   mounted () {},
-  beforeRouteLeave(to, from, next) {
+  beforeRouteLeave (to, from, next) {
     if (to.path === '/keepAlive/first') {
       to.meta.keepAlive = true
     }

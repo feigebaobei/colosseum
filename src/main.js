@@ -23,6 +23,7 @@ import {
 import 'element-ui/lib/theme-chalk/index.css'
 
 // import vConsole from '@/components/plugin/asset.js'
+require('./mock.js')
 
 Vue.use(VueDraggable)
 Vue.use(Button)

@@ -6,6 +6,7 @@ import velocity from './velocity.js'
 import plugin from './plugin.js'
 import common from './common.js'
 import keepAlive from './keepAlive.js'
+import confusion from './confusion.js'
 
 Vue.use(Router)
 
@@ -16,7 +17,8 @@ const vueRouter = new Router({
     ...velocity,
     ...plugin,
     ...common,
-    ...keepAlive
+    ...keepAlive,
+    ...confusion
   ]
 })
 // vueRouter.beforeEach(function (to, from, next) {
