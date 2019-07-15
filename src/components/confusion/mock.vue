@@ -1,18 +1,26 @@
 <template>
   <div class="mock">
     <button id="getData" @click="getData">get mock data</button>
+    <button id="getDataAge" @click="getDataAge">get mock data age</button>
     <hr>
-    <div>{{dataRes}}</div>
+    <div>{{dataName}}</div>
+    <div>{{dataSong}}</div>
+    <div>{{dataAge}}</div>
   </div>
 </template>
 
 <script>
 import api from '../../lib/api.js'
+import Mock from 'mockjs'
 export default {
   props: {},
   data () {
     return {
-      dataRes: 'null'
+      dataName: 'dataName',
+      dataSong: Mock.mock({
+        bool: Mock.Random.boolean
+      }),
+      dataAge: 'dataAge'
     }
   },
   computed: {
@@ -21,9 +29,15 @@ export default {
   },
   methods: {
     getData () {
-      api.mockData('/data/index').then(res => {
+      api.mockData('/data/name').then(res => {
         console.log(res)
-        this.dataRes = res
+        this.dataName = res
+      })
+    },
+    getDataAge () {
+      api.mockDataAge('/data/age').then(res => {
+        console.log(res)
+        this.dataAge = res
       })
     }
   },
